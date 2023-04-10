@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (C) 2019 The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~      http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.architecture.blueprints.reactive"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="21"
+23-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="31" />
+24-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml
+25
+26    <application
+26-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:21:5-38:19
+27        android:name="com.example.android.architecture.blueprints.todoapp.TodoApplication"
+27-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:23:9-40
+28        android:allowBackup="false"
+28-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:22:9-36
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.7.0] /Users/muraoka/.gradle/caches/transforms-3/d1b2ad25cd9b737da640c782ef342d5f/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:24:9-43
+32        android:label="@string/app_name"
+32-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:25:9-41
+33        android:supportsRtl="true"
+33-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:26:9-35
+34        android:theme="@style/AppTheme" >
+34-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:27:9-40
+35        <activity
+35-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:28:9-37:20
+36            android:name="com.example.android.architecture.blueprints.todoapp.tasks.TasksActivity"
+36-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:29:13-99
+37            android:exported="true"
+37-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:32:13-36
+38            android:theme="@style/AppTheme.OverlapSystemBar"
+38-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:31:13-61
+39            android:windowSoftInputMode="adjustResize" >
+39-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:30:13-55
+40            <intent-filter>
+40-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:33:13-36:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:34:17-69
+41-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:34:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:35:17-77
+43-->/Users/muraoka/personalDevelopment/Android/Android-Codelab/android-testing-starter_code/app/src/main/AndroidManifest.xml:35:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+49            android:authorities="com.example.android.architecture.blueprints.reactive.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.0.0] /Users/muraoka/.gradle/caches/transforms-3/a870605878bdfbe63d143307f873f068/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muraoka/.gradle/caches/transforms-3/1f0649ed3f98944b26f83a986e6fcedc/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muraoka/.gradle/caches/transforms-3/1f0649ed3f98944b26f83a986e6fcedc/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muraoka/.gradle/caches/transforms-3/1f0649ed3f98944b26f83a986e6fcedc/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+57        </provider>
+58
+59        <service
+59-->[androidx.room:room-runtime:2.3.0] /Users/muraoka/.gradle/caches/transforms-3/a7d387da0017a702ac679ccf8c376bea/transformed/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+60            android:name="androidx.room.MultiInstanceInvalidationService"
+60-->[androidx.room:room-runtime:2.3.0] /Users/muraoka/.gradle/caches/transforms-3/a7d387da0017a702ac679ccf8c376bea/transformed/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+61            android:directBootAware="true"
+61-->[androidx.room:room-runtime:2.3.0] /Users/muraoka/.gradle/caches/transforms-3/a7d387da0017a702ac679ccf8c376bea/transformed/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+62            android:exported="false" />
+62-->[androidx.room:room-runtime:2.3.0] /Users/muraoka/.gradle/caches/transforms-3/a7d387da0017a702ac679ccf8c376bea/transformed/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+63    </application>
+64
+65</manifest>
